@@ -225,6 +225,45 @@ text-transform: uppercase;
 font-weight: bold;
 }
 
+/* 인기 검색어 영역 CSS */
+.rankup_section{
+order: 7;
+padding: 40px 12.5%;
+padding: 2.500rem 12.5%;
+/* 40px / 320px */
+background: #219af7;
+text-shadow: 0px 1px 1px #1974ba;
+}
+
+.rankup_list{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.rankup_list li{
+width: 47.91666666666667;
+/* 115px / 240px */
+margin-top: 15px;
+margin-top: 0.938rem;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.rankup_list li:first-child, .rankup_list li:nth-child(2){
+margin-top: 0;
+}
+
+.rankup_list li a{
+display: block;
+padding: 10px 0;
+padding: 0.625rem 0;
+border: 1px solid #fff;
+border-radius: 5px;
+}
+
+
 /* 태블릿용 CSS */
 @media all and (min-width:768px){
 /* 기본 CSS */
@@ -328,6 +367,16 @@ width: 47.00854700854701;
 margin-left: 5.98290598290598;
 /* 28px / 468px */
 margin-top: 0;
+}
+
+/* 인기 검색어 영역 CSS */
+.rankup_section{
+order: 4;
+width: 40.10416666666667;
+/* 308px / 768px */
+padding-left: 5.20833333333333;
+padding-right: 5.20833333333333;
+/* 40px / 768px */
 }
 
 /* PC용 CSS */
@@ -449,6 +498,49 @@ margin-top: 30px;
 margin-top: 1.875rem;
 margin-left: 0;
 }
+
+/* 인기 검색어 영역 CSS */
+.rankup_section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 22.91666666666667;
+/* 220px / 960px */
+padding: 0;
+}
+
+.rankup_list{
+display: block;
+}
+
+.rankup_list li{
+width: auto;
+text-align: left;
+counter-increment: rankup-counter;
+}
+
+.rankup_list li:nth-child(2){
+margin-top: 15px;
+margin-top: 0.938rem;
+}
+
+.rankup_list li:before{
+padding-right: 6px;
+padding-right: 0.375rem;
+text-transform: uppercase;
+font-weight: bold;
+columns: #fff;
+text-shadow: 0px 1px 1px #428e9e;
+content: counter(rankup-counter)'.';
+}
+
+.rankup_list li a{
+display: inline;
+padding: 0;
+border: 0;
+}
+
 </style>
 </head>
 <body>
