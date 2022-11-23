@@ -24,6 +24,30 @@ max-width: 1200px;
 box-sizing: border-box;
 }
 
+/* 인포메이션 영역 CSS */
+.info_section{
+order: 1;
+width: 100%;
+background: #2ecc71;
+border-bottom: 1px solid #39d67c;
+}
+
+.info_list{
+display: flex;
+}
+
+.info_list li{
+width: 25%;
+text-align: center;
+}
+
+.info_list li a{
+display: block;
+padding: 15px 0;
+padding: 0.938rem 0;
+}
+
+
 /* 태블릿용 CSS */
 @media all and (min-width:768px){
 /* 기본 CSS */
@@ -40,6 +64,31 @@ position: relative;
 width: 90%;
 }
 }
+
+/* 인포메이션 영역 CSS */
+.info_section{
+order: 0;
+position: absolute;
+top: 30px;
+top: 1.875rem;
+right: 30px;
+right: 1.875rem;
+z-index: 30;
+width: auto;
+border-bottom: 0;
+}
+
+.info_list li{
+width: auto;
+margin-left: 15px;
+margin-left: 0.625rem;
+}
+
+.info_listli a{
+padding: 0;
+}
+
+
 </style>
 </head>
 <body>
