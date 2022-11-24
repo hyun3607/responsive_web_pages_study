@@ -263,6 +263,33 @@ border: 1px solid #fff;
 border-radius: 5px;
 }
 
+/* 배너 영역 CSS */
+.banner_section{
+order: 8;
+}
+
+.banner_box_01{
+background: #e6567a;
+}
+
+.banner_box_01 a{
+display: block;
+padding: 30px 0;
+padding: 1.875rem 0;
+text-align: center;
+}
+
+.banner_box_02{
+background: #c44968;
+}
+
+.banner_list{
+display: flex;
+justify-content: space-between;
+padding: 30px 12.5%;
+padding: 1.875rem 12.5%;
+/* 40px / 320px */
+}
 
 /* 태블릿용 CSS */
 @media all and (min-width:768px){
@@ -377,6 +404,46 @@ width: 40.10416666666667;
 padding-left: 5.20833333333333;
 padding-right: 5.20833333333333;
 /* 40px / 768px */
+}
+
+/* 배너 영역 CSS */
+.banner_section{
+display: flex;
+order: 9;
+flex-direction: column;
+width: 28.64583333333333;
+/* 220px / 768px */
+}
+
+.banner_section div{
+flex: 1 1 0;
+}
+
+.banner_box_01{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.banner_box_01 a{
+display: inline;
+padding: 0;
+}
+
+.banner_box_02{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.banner_list{
+padding: 0;
+justify-items: flex-start;
+}
+
+.banner_list li:nth-child(2){
+margin: 0 14px;
+margin: 0.0875rem;
 }
 
 /* PC용 CSS */
@@ -539,6 +606,13 @@ content: counter(rankup-counter)'.';
 display: inline;
 padding: 0;
 border: 0;
+}
+
+/* 배너 영역 CSS */
+.banner_section{
+order: 7;
+width: 22.91666666666667;
+/* 220px / 960px */
 }
 
 </style>
