@@ -291,6 +291,20 @@ padding: 1.875rem 12.5%;
 /* 40px / 320px */
 }
 
+/* 소셜 네트워크 영역 CSS */
+.social_section{
+order: 9;
+padding: 24px 12.5%;
+padding: 1.500rem 12.5%;
+/* 40px / 320px */
+background-color: #fff;
+}
+
+.social_list{
+display: flex;
+justify-content: space-between;
+}
+
 /* 태블릿용 CSS */
 @media all and (min-width:768px){
 /* 기본 CSS */
@@ -444,6 +458,27 @@ justify-items: flex-start;
 .banner_list li:nth-child(2){
 margin: 0 14px;
 margin: 0.0875rem;
+}
+
+/* 소셜 네트워크 영역 CSS */
+.social_section{
+display: flex;
+order: 7;
+justify-content: center;
+align-items: center;
+width: 16.66666666666667;
+/* 128px / 768px */
+padding: 0;
+}
+
+.social_list{
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.social_list li:nth-child(2){
+margin: 24px 0;
+margin: 1.500rem 0;
 }
 
 /* PC용 CSS */
@@ -613,6 +648,13 @@ border: 0;
 order: 7;
 width: 22.91666666666667;
 /* 220px / 960px */
+}
+
+/* 소셜 네트워크 영역 CSS */
+.social_section{
+order: 8;
+width: 17.08333333333333;
+/* 164px / 960px */
 }
 
 </style>
