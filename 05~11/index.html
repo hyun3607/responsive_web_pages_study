@@ -305,12 +305,30 @@ display: flex;
 justify-content: space-between;
 }
 
+/* 푸터 영역 CSS */
+.footer{
+order: 10;
+width: 100%;
+background: #474747;
+}
+
+.footer p{
+padding: 20px;
+padding: 1.250rem;
+font-size: 0.813em;
+font-size: 0.813rem;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+color: #fff;
+text-shadow: 0px 1px 1px #191919;
+}
+
 /* 태블릿용 CSS */
 @media all and (min-width:768px){
 /* 기본 CSS */
 #wrap{
 flex-flow: row wrap;
-}
 }
 
 /* 헤더영역 CSS */
@@ -481,13 +499,19 @@ margin: 24px 0;
 margin: 1.500rem 0;
 }
 
+/* 푸터 영역 CSS */
+.footer p{
+padding: 40px 0;
+padding: 2.500rem 0;
+}
+}
+
 /* PC용 CSS */
 @media all and (min-width:960px){
 /* 기본 CSS */
 #wrap{
 position: relative;
 width: 90%;
-}
 }
 
 /* 인포메이션 영역 CSS */
@@ -655,6 +679,18 @@ width: 22.91666666666667;
 order: 8;
 width: 17.08333333333333;
 /* 164px / 960px */
+}
+
+/* 푸터 영역 CSS */
+.footer{
+order: 9;
+}
+
+.footer p{
+padding-left: 3.125%;
+/* 30px / 960px */
+text-align: left;
+}
 }
 
 </style>
